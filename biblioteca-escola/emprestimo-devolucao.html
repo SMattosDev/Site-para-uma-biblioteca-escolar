@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Empréstimo e Devolução</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container5">
+        <h1>Empréstimo e Devolução</h1>
+
+        <!-- Mensagem de sucesso -->
+        <div id="mensagem-sucesso" style="color: green; display: none;"></div>
+
+        <!-- Formulário para registrar um empréstimo -->
+        <form id="form-emprestimo" onsubmit="registrarEmprestimo(event)">
+            <label for="nome-aluno">Nome do Aluno:</label>
+            <input type="text" id="nome-aluno" required>
+
+            <label for="livro">Livro:</label>
+            <input type="text" id="livro" required>
+
+            <label for="data-devolucao">Data de Devolução:</label>
+            <input type="date" id="data-devolucao" required>
+
+            <button type="submit">Registrar Empréstimo</button>
+        </form>
+
+        <!-- Botão para acessar os empréstimos registrados -->
+        <button onclick="location.href='emprestimos-registrados.html'">Ver Empréstimos Registrados</button>
+    </div>
+
+    <script src="emprestimos.js"></script>
+</body>
+
+</html>

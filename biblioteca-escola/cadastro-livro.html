@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Livros</h1>
+        <form id="livro-form" onsubmit="cadastrarLivro(event)">
+            <input type="text" id="titulo" placeholder="Título do Livro" required>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <input type="number" id="ano" placeholder="Ano de Publicação" required>
+            <button type="submit">Cadastrar Livro</button>
+        </form>
+        <p id="mensagem-sucesso"></p>
+        <button id="ver-livros" onclick="verLivros()">Ver Livros Cadastrados</button>
+    </div>
+
+    <script src="livros.js"></script>
+</body>
+
+</html>
